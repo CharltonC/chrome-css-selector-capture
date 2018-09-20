@@ -12,7 +12,7 @@ Support page for the CSS Selector Highlight chrome extension
 * FAQ 
 
 
-#### About the Extension
+## About the Extension
 * This is a free extension. It is a hobby project taken from a data scraping prototype I built a while back and until recently I decided to do it in a proper production standards. I am responsible for determining requirements/features, design and coding. Kudos to Google Material Design so that I don't have to be stuck at UI design process.
 * What this plugin does:
     * shows you the selector path when you hover an element in the page without opening the devtool 
@@ -22,7 +22,7 @@ Support page for the CSS Selector Highlight chrome extension
 * The extension has been tested heavily in the browser & Unit tests (around 280 tests and about 97% coverage), there are always possible Edge cases that haven't been accounted for. Please submit any issue in case you bump into any bug. Also feel free to drop me a message on LinkedIn and let me know what you think!
 
 
-#### UI Layout (within app element added to the DOM by the Extension)
+## UI Layout (within app element added to the DOM by the Extension)
 ![ui-layout.png](./img/ui-layout.png)
 
 1. **Extension Icon (Popup Menu)**
@@ -50,7 +50,7 @@ Support page for the CSS Selector Highlight chrome extension
 * **Settings Dialog**
     This is essentially the same as the one in Popup menu. The only difference is you need click the "save" button in order to save the settings. This offers a flexible setting option when you are experimenting with the selector and the highlights.
 
-#### Examples
+## Examples
 1. Example showing a non-verbose selector (with id) for hovered element
 ![screenshot-1_non-vb-selector.png](./img/screenshot-1_non-vb-selector.png)
 
@@ -58,7 +58,7 @@ Support page for the CSS Selector Highlight chrome extension
 ![screenshot-2_vb-selector.png](./img/screenshot-2_vb-selector.png)
 
 
-#### FAQ
+## FAQ
 * As majority of time is spent prior to initial release, I am transitioned to casual mode for this project. Any future feature request will still be considered as whether it should go in the next release. 
 * For bugs/issues, please provide details of what URL you enter the bug. Try to be as specific as possible. For example:
     * URL
