@@ -31,16 +31,26 @@ Support page for the CSS Selector Highlight Chrome Extension
 1. **Extension Icon (Popup Menu)**
 
     This contains the global settings. Any changes made here is automatically saved to Chrome storage. 
+    
     - Enable App Switch: 
-    This allows you to enable/disable the app/extension for the current page. Alternatively to disable the app, you can also use the "ESC" key in the page.
+
+        This allows you to enable/disable the app/extension for the current page. Alternatively to disable the app, you can also use the "ESC" key in the page.
+    
     - Auto Run Switch: 
-    When this is on, it will automatically start the app when the page loads, that means you will see the highlight/overlay as soon as you hover an element.
+
+        When this is on, it will automatically start the app when the page loads, that means you will see the highlight/overlay as soon as you hover an element.
+
     - Align Selector to Top: 
-    Place the selector bar either at the top (on) or bottom (off).
+
+        Place the selector bar either at the top (on) or bottom (off).
+    
     - Verbose Mode Switch: 
-    This essentially determines whether the selector path is "concise" or not. In non-verbose mode, it would be more concise when you have for example an unique id, e.g. `div#lorem-sum` whereas Verbose mode will generate the selector all the way up to `<body>` tag, e.g. `body > div#lorem-sum.someclass:nth-child(10)`. When finding matches, verbose mode can be very useful in observing the variations of the selector for each hover target thus finding the desire matched elements.    
+
+        This essentially determines whether the selector path is "concise" or not. In non-verbose mode, it would be more concise when you have for example an unique id, e.g. `div#lorem-sum` whereas Verbose mode will generate the selector all the way up to `<body>` tag, e.g. `body > div#lorem-sum.someclass:nth-child(10)`. When finding matches, verbose mode can be very useful in observing the variations of the selector for each hover target thus finding the desire matched elements.    
+    
     - Include Options: 
-    These options are for Verbose Mode only and for the last "item", i.e. the hover target only, not its ancestors. Again this is useful for quickly finding matches such as all the `li` in `ul`. The reason why this doesn't apply for all id or class or nth-child up the chain is that if we do that, every time you hover a new element you may end up with so many matches at the beginning which will impact the performance. Keeping it like so will keep some level of "uniqueness" for the selector.
+
+        These options are for Verbose Mode only and for the last "item", i.e. the hover target only, not its ancestors. Again this is useful for quickly finding matches such as all the `li` in `ul`. The reason why this doesn't apply for all id or class or nth-child up the chain is that if we do that, every time you hover a new element you may end up with so many matches at the beginning which will impact the performance. Keeping it like so will keep some level of "uniqueness" for the selector.
 
 2. **Interactive Selector Path**
 
