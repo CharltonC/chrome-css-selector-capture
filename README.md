@@ -56,7 +56,7 @@ Support page for the CSS Selector Highlight Chrome Extension
 
     This is generated based on the element you hover on. It will update whenever you hover on a new target element given when the highlight is not locked. The selector path is entirely interactive and customizable (once you hover a target), meaning you can turn on/off a tag, a id, a class or classes and nth-child or even the arrow to find the matches in the page. By default it starts with a verbose path and let you trim it down to customize.
 
-* **Selector Stats (3 numbers)**
+3. **Selector Stats (3 numbers)**
     - 1st number: 
     no. of overlays in the viewport
 
@@ -66,15 +66,15 @@ Support page for the CSS Selector Highlight Chrome Extension
     - 3rd number: 
     no. of matched elements that are hidden (therefore no overlays)
 
-* **Shortcut Buttons (copy selector, lock/unlock highlight position)**
+4. **Shortcut Buttons (copy selector, lock/unlock highlight position)**
 
     Quick access to the copy selector and lock highlight buttons. These are useful when you have lost track of the original hovered target element visually. For example, when the hover element is no longer in viewport, it is easier to unlock or copy the selector from there.
 
-* **Highlight Overlay**
+5. **Highlight Overlay**
 
     An overlay that indicates either the hover target element or the matched elements (based on the selector). The overlay for the target element has a more saturated color and also has a triple dots button for opening up the settings dialog. 
 
-* **Settings Dialog**
+6. **Settings Dialog**
 
     This is essentially the same as the one in Popup menu. The only difference is you need click the "save" button in order to save the settings. This offers a flexible setting option when you are experimenting with the selector and the highlights.
 
