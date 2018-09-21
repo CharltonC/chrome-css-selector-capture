@@ -10,6 +10,8 @@ Support page for the CSS Selector Highlight chrome extension
 * How UI is layout and what each segment does
 * Examples of the Extension in Use in a random dummy page (one without matches and one with matches)
 * FAQ 
+* Features & Issues
+* Release Notes
 
 ----------------
 
@@ -29,11 +31,11 @@ Support page for the CSS Selector Highlight chrome extension
 1. **Extension Icon (Popup Menu)**
 
     This contains the global settings. Any changes made here is automatically saved to Chrome storage. 
-    - Enable App Switch: This allows you to enable/disable the app/extension for the current page. Alternatively to disable the app, you can also use the "ESC" or "Right-click" in the page.
+    - Enable App Switch: This allows you to enable/disable the app/extension for the current page. Alternatively to disable the app, you can also use the "ESC" key in the page.
     - Auto Run Switch: When this is on, it will automatically start the app when the page loads, that means you will see the highlight/overlay as soon as you hover an element.
-    - Verbose Mode Switch: This essentially determines whether the selector path is "concise" or not. In non-verbose mode, it would be more concise when you have for example an unique id, e.g. `div#lorem-sum` whereas Verbose mode will generate the selector all the way up to `<body>` tag, e.g. `body > div#lorem-sum.someclass:nth-child(10)`. When finding matches, verbose mode can be very useful in observing the variations of the selector for each hover target thus finding the desire matched elements.
     - Align Selector to Top: Place the selector bar either at the top (on) or bottom (off).
-    - Include Options: These options are for Verbose Mode only and for the last "item", i.e. the hover target only, not its ancestors. Again this is useful for quickly finding matches such as all the `li` in `ul`.
+    - Verbose Mode Switch: This essentially determines whether the selector path is "concise" or not. In non-verbose mode, it would be more concise when you have for example an unique id, e.g. `div#lorem-sum` whereas Verbose mode will generate the selector all the way up to `<body>` tag, e.g. `body > div#lorem-sum.someclass:nth-child(10)`. When finding matches, verbose mode can be very useful in observing the variations of the selector for each hover target thus finding the desire matched elements.    
+    - Include Options: These options are for Verbose Mode only and for the last "item", i.e. the hover target only, not its ancestors. Again this is useful for quickly finding matches such as all the `li` in `ul`. The reason why this doesn't apply for all id or class or nth-child up the chain is that if we do that, every time you hover a new element you may end up with so many matches at the beginning which will impact the performance. Keeping it like so will keep some level of "uniqueness" for the selector.
 
 2. **Interactive Selector Path**
 
@@ -56,6 +58,7 @@ Support page for the CSS Selector Highlight chrome extension
 
     This is essentially the same as the one in Popup menu. The only difference is you need click the "save" button in order to save the settings. This offers a flexible setting option when you are experimenting with the selector and the highlights.
 
+
 ## Examples
 1. Example showing a non-verbose selector (with id) for hovered element
 ![screenshot-1_non-vb-selector.png](./img/screenshot-1_non-vb-selector.png)
@@ -65,9 +68,17 @@ Support page for the CSS Selector Highlight chrome extension
 
 
 ## FAQ
-* As majority of time is spent prior to initial release, I am transitioned to casual mode for this project. Any future feature request will still be considered as whether it should go in the next release. 
-* For bugs/issues, please provide details of what URL you enter the bug. Try to be as specific as possible. For example:
+* Extension in Mobile Emulation (considered & will not be in feature)
+    * The extension works normal under the "responsive mode" however not in Mobile becuase in mobile it is an entirely different context since we are dealing with `touchstart` etc, which means requiring User to tap on the element. It is quite different to what we are using in Desktop which is `mouseover`. Apart from potential switching the event context, the mobile screen size may also be too small to work with, especially when the selector path may take up a lot of screen realestate.
+* Hotkey for Locking the Highlight (considered & will be in next release)
+
+
+## Features & Issues
+* As majority of time is spent prior to initial release, I am transitioned to casual maintenance for this project. Any future feature request will still be considered as whether it should go in the next release. For now the next version release would be somewhere in 3-6 months, unless for critical hotfix.
+* For bugs/issues, please provide details and try to be as specific as possible. For example:
     * URL
     * Steps to reproduce the issue
     * What should be expected and what is the actual result
     * etc
+
+## Release Notes
