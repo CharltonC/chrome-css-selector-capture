@@ -105,6 +105,11 @@ Support page for the CSS Selector Highlight Chrome Extension
     * What should be expected and what is the actual result
     * etc
 
+
 ## Release Notes
 * 1.0.0 
     * First Release
+
+
+## Reference
+* [Unit Test Report]: (./ref/test-report.md)
