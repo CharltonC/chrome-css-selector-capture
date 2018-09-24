@@ -112,4 +112,4 @@ Support page for the CSS Selector Highlight Chrome Extension
 
 
 ## Reference
-* [Unit Test Report]: (./ref/test-report.md)
+* [Unit Test Report](./ref/test-report.md)
