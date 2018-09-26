@@ -3,7 +3,6 @@ Support page for the CSS Selector Capture Chrome Extension
 
 #### Links:
 * Chrome Extension Store Link: https://chrome.google.com/webstore/detail/cpnkcffhllafbdbljkmhebnpbnlhapmd
-* Quick Tutorial Link (Youtube): https://www.youtube.com/watch?v=qqkGUouhHCI
 
 #### Table of Contents:
 * About the Extension
@@ -108,4 +107,4 @@ Support page for the CSS Selector Capture Chrome Extension
 
 ## Release Notes
 * 1.0.0 
-    * First Release
+    * Initial Release
