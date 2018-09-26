@@ -1,5 +1,5 @@
-# Chrome Extension: CSS Selector Highlight
-Support page for the CSS Selector Highlight Chrome Extension
+# Chrome Extension: CSS Selector Capture
+Support page for the CSS Selector Capture Chrome Extension
 
 #### Links:
 * Chrome Extension Store Link: https://chrome.google.com/webstore/detail/cpnkcffhllafbdbljkmhebnpbnlhapmd
@@ -22,7 +22,7 @@ Support page for the CSS Selector Highlight Chrome Extension
     * highlights the target & any matches that fit the profile of the selector path
     * allows you to interact with the selector to find relevant matches in the page within the viewport context
 * The extension is focused on getting the selector of a VISIBLE element in the page as a starting point, not entering a custom selector first to find matches. I would imagine the extension would suit the use of Front End Developers and/or data scraping purpose where finding selector, target or matches are quite demanding. 
-* The extension is written with TypeScript/jQuery/AngularJs and unit tested using Jasmine. Angular 5/6 was investigated but not going forward as the final choice due to achieving the compatibility with existing App or library in User's page. The extension has been tested  in the browser (Chrome v.68+ in MacOs and Windows) & in Unit tests (around 280 tests and about 97% coverage), there are always possible edge cases that haven't been accounted for. Please submit any issue in case you bump into any bug. Also feel free to drop me a message on LinkedIn and let me know what you think!
+* The extension is written with TypeScript/jQuery/AngularJs and unit tested using Jasmine. Angular 5/6 was investigated but not going forward as the final choice due to achieving the compatibility with existing App or library in User's page. The extension has been tested  in the browser (Chrome v.68+ in MacOs and Windows) & in Unit tests ([Test Report](./ref/test-report.md), about 280 tests with 97% coverage), there are always possible edge cases that haven't been accounted for. Please submit any issue in case you bump into any bug. Also feel free to drop me a message on LinkedIn and let me know what you think!
 
 
 ## UI Layout (within app element added to the DOM by the Extension)
@@ -109,7 +109,3 @@ Support page for the CSS Selector Highlight Chrome Extension
 ## Release Notes
 * 1.0.0 
     * First Release
-
-
-## Reference
-* [Unit Test Report](./ref/test-report.md)
