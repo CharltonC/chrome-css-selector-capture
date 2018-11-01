@@ -97,6 +97,11 @@ Support page for the CSS Selector Capture Chrome Extension
 * In the case of event is not getting picked up in some pages due to `evt.stopImmediatePropagation()`, such as the `mouseover` event please send me the page URL and steps to reproduce the issue. I already have a mechanism for dealing this scenario though for now I am not including as it involves the override of `Event.prototype.stopImmediatePropagation`.
 
 
+## Privacy
+* The extension does NOT collect any data or send data to third party. 
+* If User is concerned, as a good security measure, User can always treat extension as non-trusted and disable ALL Extensions without any exceptions ESPECIALLY BEFORE you log in to any sites (Simply turn them off in Chrome Extension Management Page).
+
+
 ## Issues/Support
 * As majority of time is spent prior to initial release, I am transitioned to casual maintenance for this project. Any future feature request will still be considered as whether it should go in the next release. For now the next version release interval would be somewhere in 3-6 months, unless for critical hotfix.
 * For bugs/issues, please provide details and try to be as specific as possible. For example:
