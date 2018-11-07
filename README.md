@@ -10,6 +10,7 @@ Support page for the CSS Selector Capture Chrome Extension
 * How UI is layouted and what each segment does
 * Examples of the Extension in Use in a random dummy page
 * FAQ 
+* Privacy
 * Issues/Support
 * Release Notes
 
@@ -99,7 +100,7 @@ Support page for the CSS Selector Capture Chrome Extension
 
 ## Privacy
 * The extension does NOT collect any data or send data to third party. 
-* If User is concerned, as a good security measure, User can always treat extension as non-trusted and disable ALL Extensions without any exceptions ESPECIALLY BEFORE you log in to any sites (Simply turn them off in Chrome Extension Management Page).
+* If concerned, as a good security measure, Users can always assume all extensions as non-secure and disable them without any exceptions especially before logging in to any sites (Simply turn them off in Chrome Extension Management Page).
 
 
 ## Issues/Support
