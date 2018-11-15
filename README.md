@@ -62,7 +62,7 @@ Support page for the CSS Selector Capture Chrome Extension
     no. of overlays in the viewport
 
     - 2nd number: 
-    no. of overlays matched the selector (beware this may not include the hover target element if you made significant change to the selector path, for example, when you turn off one direct descendant arrow and the anchor tag, like so: `div > a > p` becomes `div > p`.
+    no. of overlays matched the selector (beware this may not include the hover target element if you made significant change to the selector path, for example, when you turn off one direct descendant arrow and the anchor tag, like so: `div > a > p` becomes `div > p`.)
     
     - 3rd number: 
     no. of matched elements that are hidden (therefore no overlays)
