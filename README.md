@@ -113,5 +113,7 @@ Support page for the CSS Selector Capture Chrome Extension
 
 
 ## Release Notes
-* 1.0.0 (2018.09.29): Initial Release
-* 1.0.3 (2018.10.15): Optimization for selector retrieval
+* 1.0.3 (2018.10.15)
+    * Optimization for selector retrieval
+* 1.0.0 (2018.09.29)
+    * Initial Release
