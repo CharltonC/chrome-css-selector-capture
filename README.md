@@ -87,6 +87,18 @@ Support page for the CSS Selector Capture Chrome Extension
 2. Example showing a verbose selector that has been tweaked to find matched elements
 ![screenshot-2_vb-selector.png](./img/screenshot-2_vb-selector.png)
 
+3. Example showing feature where selector updates on mouseover
+![feat-1_mouseover.gif](./img/feat-1_mouseover.gif)
+
+4. Example showing feature where selector is switched between verbose and non-verbose mode
+![feat-2_verbose.gif](./img/feat-2_verbose.gif)
+
+5. Example showing feature where selector is interacted/tweaked to find multiple matches
+![feat-3_multiple-match.gif](./img/feat-3_multiple-match.gif)
+
+6. Example showing feature where statistics and highlights of matches are updated when window is scrolled (in which content is lazy loaded) 
+![feat-4_match-update-lazyload.gif](./img/feat-4_match-update-lazyload.gif)
+
 
 ## FAQ
 * Features Considerations:
