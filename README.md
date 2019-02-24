@@ -126,7 +126,7 @@ User Manual and Support page for the CSS Selector Capture Chrome Extension
 
 ## Release Notes
 * 2.0.0 (2019.02.25)
-    * Optimization concise selector (i.e. shorter)
+    * Optimization for concise selector (i.e. shorter)
     * Adjustment of selector background opacity when Popup button is on top and user hovers it
 * 1.0.3 (2018.10.15)
     * Optimization for selector retrieval
