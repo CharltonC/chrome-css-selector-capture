@@ -7,6 +7,7 @@ User Manual and Support page for the CSS Selector Capture Chrome Extension
 
 #### Table of Contents:
 * About the Extension
+* Shortcut Hotkeys
 * How UI is layouted and what each segment does
 * Examples of the Extension in Use in a random dummy page
 * FAQ 
@@ -23,7 +24,12 @@ User Manual and Support page for the CSS Selector Capture Chrome Extension
     * highlights the target & any matches that fit the profile of the selector path
     * allows you to interact with the selector to find relevant matches in the page within the viewport context
 * The extension is focused on getting the selector of a VISIBLE element in the page as a starting point, not entering a custom selector first to find matches. I would imagine the extension would suit the use of Front End Developers and/or data scraping purpose where finding selector, target or matches are quite demanding. 
-* The extension is written with TypeScript/jQuery/AngularJs and unit tested using Jasmine. Angular 5/6 was investigated but not going forward as the final choice due to achieving the compatibility with existing App or library in User's page. The extension has been tested  in the browser (Chrome v.68+ in MacOs and Windows) & in Unit tests ([Test Report](./ref/test-report.md), about 280 tests with 97% coverage), there are always possible edge cases that haven't been accounted for. Please submit any issue in case you bump into any bug. Also feel free to drop me a message on LinkedIn and let me know what you think!
+* The extension is written with TypeScript/jQuery/AngularJs and unit tested using Jasmine. Angular 5/6 was investigated but not going forward as the final choice due to achieving the compatibility with existing App or library in User's page. The extension has been tested  in the browser (Chrome v.68+ in MacOs and Windows) & in Unit tests ([Test Report](./ref/test-report.md), about 300 tests with 97% coverage), there are always possible edge cases that haven't been accounted for. Please submit any issue in case you bump into any bug. Also feel free to drop me a message on LinkedIn and let me know what you think!
+
+
+## Shortcut Hotkeys (only when app is enabled)
+* `CTRL` for locking and unlocking the overlays in position
+* `ESC` for disable/exit the Extension
 
 
 ## UI Layout (within app element added to the DOM by the Extension)
@@ -104,7 +110,6 @@ User Manual and Support page for the CSS Selector Capture Chrome Extension
 * Features Considerations:
     * Extension in Mobile Emulation (considered & will not be in feature)
         * The extension works normal under the "responsive mode" however not in Mobile becuase in mobile it is an entirely different context since we are dealing with `touchstart` etc, which means requiring User to tap on the element. It is quite different to what we are using in Desktop which is `mouseover`. Apart from potential switching the event context, the mobile screen size may also be too small to work with, especially when the selector path may take up a lot of screen realestate.
-    * Hotkey for Locking the Highlight (considered to be in the next release)
     * Development for Safari and Firefox
         * I haven't investigated how similar the API will be however if there is not much variations in the implementation then it will definitely be possible down the track. The goal is to keep the same codebase or almost same codebase at least.
 * In the case of event is not getting picked up in some pages due to `evt.stopImmediatePropagation()`, such as the `mouseover` event please send me the page URL and steps to reproduce the issue. I already have a mechanism for dealing this scenario though for now I am not including as it involves the override of `Event.prototype.stopImmediatePropagation`.
@@ -125,6 +130,8 @@ User Manual and Support page for the CSS Selector Capture Chrome Extension
 
 
 ## Release Notes
+* 2.1.0 (2019.03.21)
+    * Added a shortcut hotkey (CTRL) for locking toggle of the overlays
 * 2.0.0 (2019.02.25)
     * Optimization for concise selector (i.e. shorter)
     * Adjustment of selector background opacity when Popup button is on top and user hovers it

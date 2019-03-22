@@ -26,8 +26,9 @@
     native: window resize event (width scenario)
       ✓ size and offset position of overlay should be adjusted to be the same as the prev. mouseover target
       ✓ should have animation disabled for matches` overlays
-    native: document "ESC" keyup event
+    native: keyup event
       ✓ should trigger the handler & remove the events when Esc key is pressed
+      ✓ should trigger the handler & toggle locking the highlight when Ctrl key is pressed
     ng-change: interact with path list checkbox
       ✓ should update the path text, stats and match overlays when uncheck "nth-child"
       ✓ should update the path text, stats and match overlays when check "nth-child" (after "nth-child" unchecked)
@@ -78,8 +79,9 @@
       ✓ should not dismiss dialog if it is not allowed to be closed
       ✓ should dismiss dialog if it is allowed to be closed
     Global Event: document contextmenu/righ-click and ESC key (app exit)
-      ✓ should not exit if event is not contextmenu nor ESC key
+      ✓ should not exit if event is not contextmenu nor ESC or CTRL key
       ✓ should exit if event type is keyup and keycode is 27 (ESC)
+      ✓ should toggle locking the highlight if event type is keyup and keycode is 17 (CTRL)
     Built-in Event: Interact with Path List
       ✓ should update the selector, matched elements/overlays and overlay stats
     Built-in Event: Handle verbose mode change
@@ -129,7 +131,7 @@
 
   Path Stats Component/Controller
     ✓ should pass the data to component's controller and DOM
-    ✓ should reflect in component's controller and DOM when passed data changes
+    ✓ should reflect in component's controller and DOM when passed data changes 
 
   Chrome Handle Service (Independent Service from Angular)
     Get App State from Chrome Built-in Storage
@@ -269,11 +271,14 @@
           ✓ should return tag selector variation if its total matches in DOM is same as class or nthChild selector variation
           ✓ should return tag selector variation if its total matches in DOM is less than class or nthChild selector variation
           ✓ should return nthChild selector variation if its total matches in DOM is less than tag and/or class selector variation
+          ✓ should return clsNthChild selector variation if its total matches in DOM is less than tag and/or class and/or nthChild selector variation
       Create an path include option based on the Selector Variation Key
+        ✓ should return corresponding path include option when key is not defined
         ✓ should return corresponding path include option when key is "id"
         ✓ should return corresponding path include option when key is "tag"
         ✓ should return corresponding path include option when key is "cls"
         ✓ should return corresponding path include option when key is "nthChild"
+        ✓ should return corresponding path include option when key is "clsNthChild"
     Path Option
       Extend a plain selector path with filter option
         ✓ should return a option with overrided include option
@@ -302,7 +307,7 @@
       Format elem offset data and viewport data
         ✓ should call the elem offset data and viewport data
       Outside Viewport
-        ✓ should return false when elem is not visible across both X and Y axis
+        ✓ should return false when elem is not visible across both X and Y axis 
         ✓ should return false when elem is visible across X axis but not Y axis or vice versa
       Inside Viewport
         ✓ should return true when elem is completely visible across both X and Y axis
@@ -376,6 +381,8 @@
       check if at least one overlay is present
         ✓ should return true if mouseover element has been cached prior (at least one)
         ✓ should return false if mouseover element has not been cached prior
+      toggle the locked state for the overlays
+        ✓ should toggle the locked state
     Popup Dialog
       set dialog position relative to the popup container position
         ✓ should set align with dialog's bottom right
@@ -470,14 +477,10 @@
       ✓ should skip if it is in DOM but already is last-child of body
       ✓ should move the Element host if it is in DOM but is not last-child of body
 
-Chrome 72.0.3626 (Mac OS X 10.12.2): Executed 296 of 296[32m SUCCESS[39m (3.666 secs / 3.502 secs)
-[32mTOTAL: 296 SUCCESS[39m
-
-
 =============================== Coverage summary ===============================
-Statements   : 98.24% ( 947/964 )
-Branches     : 96.29% ( 337/350 )
-Functions    : 98.58% ( 208/211 )
-Lines        : 98.48% ( 907/921 )
+Statements   : 98.66% ( 959/972 )
+Branches     : 97.18% ( 344/354 )
+Functions    : 98.58% ( 209/212 )
+Lines        : 98.92% ( 919/929 )
 ================================================================================
 ```
