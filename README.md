@@ -85,7 +85,7 @@ User Manual and Support page for the CSS Selector Capture Chrome Extension
 
     This is essentially the same as the one in Popup menu. The only difference is you need click the "save" button in order to save the settings. This offers a flexible setting option when you are experimenting with the selector and the highlights.
 
-    - Lock Hilight Switch: 
+    - Lock Highlight Switch: 
 
         This allows you to lock/unlock the current overlays. It can also be done via `CTRL` key. Note this is specific to the page therefore it is not available as a general option from the Extension Icon Popup menu.
 
