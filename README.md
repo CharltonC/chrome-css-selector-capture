@@ -75,7 +75,7 @@ User Manual and Support page for the CSS Selector Capture Chrome Extension
 
 4. **Shortcut Buttons (copy selector, lock/unlock highlight position)**
 
-    Quick access to the copy selector and lock highlight buttons. These are useful when you have lost track of the original hovered target element visually. For example, when the hover element is no longer in viewport, it is easier to unlock or copy the selector from there.
+    Quick access to the copy selector and lock highlight buttons. These are useful when you have lost track of the original hovered target element visually. For example, when the hover element is no longer in viewport, it is easier to unlock or copy the selector from there. Notice the lock/unlock toggle can also be accessed via `CTRL` key.
 
 5. **Highlight Overlay**
 
@@ -84,6 +84,10 @@ User Manual and Support page for the CSS Selector Capture Chrome Extension
 6. **Settings Dialog**
 
     This is essentially the same as the one in Popup menu. The only difference is you need click the "save" button in order to save the settings. This offers a flexible setting option when you are experimenting with the selector and the highlights.
+
+    - Lock Hilight Switch: 
+
+        This allows you to lock/unlock the current overlays. It can also be done via `CTRL` key. Note this is specific to the page therefore it is not available as a general option from the Extension Icon Popup menu.
 
 
 ## Examples
