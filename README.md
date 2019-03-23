@@ -134,6 +134,8 @@ User Manual and Support page for the CSS Selector Capture Chrome Extension
 
 
 ## Release Notes
+* 2.2.0 (2019.03.23)
+    * Added a User Guide Link in Extension Icon Popup
 * 2.1.0 (2019.03.21)
     * Added a shortcut hotkey (CTRL) for locking toggle of the overlays
 * 2.0.0 (2019.02.25)
