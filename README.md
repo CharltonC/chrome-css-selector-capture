@@ -1,6 +1,6 @@
 # Chrome Extension: CSS Selector Capture
 > User Manual and Support page for the CSS Selector Capture Chrome Extension
-![Diagram](./ref/communication-flow.xml)
+
 
 #### Links:
 * [Chrome Extension Store Link](https://chrome.google.com/webstore/detail/cpnkcffhllafbdbljkmhebnpbnlhapmd)
