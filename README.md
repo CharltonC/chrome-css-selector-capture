@@ -122,7 +122,7 @@
 
 ## Privacy
 * The extension does NOT collect any data or send data to third party. 
-* If concerned, as a good security measure, Users can always assume all extensions as non-secure and disable them without any exceptions especially before logging in to any sites (Simply turn them off in Chrome Extension Management Page).
+* Current Chrome versions (e.g. v.75) offer the additional control (apart from extension settings page) to switch on any Extension upon clicking the Extension Icon while by default it is disabled.
 
 
 ## Issues/Support
