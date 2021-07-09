@@ -1,5 +1,5 @@
-# Chrome Extension: CSS Selector Capture
-> User Manual and Support page for the CSS Selector Capture Chrome Extension
+# Chrome Extension: CSS Selector Capture User Guide
+> User Guide and Support page for the CSS Selector Capture Chrome Extension
 
 
 #### Links:
