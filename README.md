@@ -40,23 +40,23 @@
 
     This contains the global settings. Any changes made here is automatically saved to Chrome storage. 
     
-    - Enable App Switch: 
+    * Enable App Switch: 
 
         This allows you to enable/disable the app/extension for the current page. Alternatively to disable the app, you can also use the "ESC" key in the page.
     
-    - Auto Run Switch: 
+    * Auto Run Switch: 
 
         When this is on, it will automatically start the app when the page loads, that means you will see the highlight/overlay as soon as you hover an element.
 
-    - Align Selector to Top: 
+    * Align Selector to Top: 
 
         Place the selector bar either at the top (on) or bottom (off).
     
-    - Verbose Mode Switch: 
+    * Verbose Mode Switch: 
 
         This essentially determines whether the selector path is "concise" or not. In non-verbose mode, it would be more concise when you have for example an unique id, e.g. `div#lorem-sum` whereas Verbose mode will generate the selector all the way up to `<body>` tag, e.g. `body > div#lorem-sum.someclass:nth-child(10)`. When finding matches, verbose mode can be very useful in observing the variations of the selector for each hover target thus finding the desire matched elements.    
     
-    - Include Options: 
+    * Include Options: 
 
         These options are for Verbose Mode only and for the last "item", i.e. the hover target only, not its ancestors. Again this is useful for quickly finding matches such as all the `li` in `ul`. The reason why this doesn't apply for all id or class or nth-child up the chain is that if we do that, every time you hover a new element you may end up with so many matches at the beginning which will impact the performance. Keeping it like so will keep some level of "uniqueness" for the selector.
 
@@ -65,13 +65,13 @@
     This is generated based on the element you hover on. It will update whenever you hover on a new target element given when the highlight is not locked. The selector path is entirely interactive and customizable (once you hover a target), meaning you can turn on/off a tag, a id, a class or classes and nth-child or even the arrow to find the matches in the page. By default it starts with a verbose path and let you trim it down to customize.
 
 3. **Selector Stats (3 numbers)**
-    - 1st number: 
+    * 1st number: 
     no. of overlays in the viewport
 
-    - 2nd number: 
+    * 2nd number: 
     no. of overlays matched the selector (beware this may not include the hover target element if you made significant change to the selector path, for example, when you turn off one direct descendant arrow and the anchor tag, like so: `div > a > p` becomes `div > p`.)
     
-    - 3rd number: 
+    * 3rd number: 
     no. of matched elements that are hidden (therefore no overlays)
 
 4. **Shortcut Buttons (copy selector, lock/unlock highlight position)**
@@ -86,7 +86,7 @@
 
     This is essentially the same as the one in Popup menu. The only difference is you need click the "save" button in order to save the settings. This offers a flexible setting option when you are experimenting with the selector and the highlights.
 
-    - Lock Highlight Switch: 
+    * Lock Highlight Switch: 
 
         This allows you to lock/unlock the current overlays. It can also be done via `CTRL` key. Note this is specific to the page therefore it is not available as a general option from the Extension Icon Popup menu.
 
