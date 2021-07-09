@@ -144,6 +144,8 @@
 
 
 ## Release Notes
+* 2.3.0 (2021.07.10)
+    * Optimization for concise selector
 * 2.2.0 (2019.03.23)
     * Added a User Guide Link in Extension Icon Popup
 * 2.1.0 (2019.03.21)
