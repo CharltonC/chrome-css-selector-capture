@@ -62,7 +62,16 @@
 
 2. **Interactive Selector Path**
 
-    This is generated based on the element you hover on. It will update whenever you hover on a new target element given when the highlight is not locked. The selector path is entirely interactive and customizable (once you hover a target), meaning you can turn on/off a tag, a id, a class or classes and nth-child or even the arrow to find the matches in the page. By default it starts with a verbose path and let you trim it down to customize.
+    * This is generated based on the element you hover on. It will update whenever you hover on a new target element given when the highlight is not locked. The selector path is entirely interactive and customizable (once you hover a target), meaning you can turn on/off a tag, a id, a class or classes and nth-child or even the arrow to find the matches in the page. By default it starts with a verbose path and let you trim it down to customize.
+
+    * Customizing the selector path requires some simple understanding on what blocks each partial selector path is made up of:
+        | block                     |  description |
+        | ---                       | --- |
+        | `<tag>`                   | HTML element tag, e.g. `div`  |
+        | `#<id>`                   | Unique ID (typically only 1 in each document), e.g. `#header` |
+        | `.<class>`                | CSS class name (can be one or more), e.g. `.title` |
+        | `:nth-child(<integer>)`   | The "nth" child (starting from 1) of parent, e.g. `span:nth-child(2)` targets all `span` that is second child of its parent |
+        | `>`                       | Indicates a parent/child relationship, e.g. `div > span` targets all `span` that is direct child of `div` |
 
 3. **Selector Stats (3 numbers)**
     * 1st number: 
