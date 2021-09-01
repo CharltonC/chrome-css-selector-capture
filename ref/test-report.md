@@ -292,7 +292,8 @@
         ✓ should return path include option when key is "clsTag"/"nthChildTag/clsNthChildTag"
       Trim selector paths
         ✓ should return original paths if there is only 1 path
-        ✓ should return original paths if there are > 1 paths but not trimmable
+        ✓ should return original paths if the only match doesnt match original target element
+        ✓ should return original paths if there are > 1 paths but there are >1 matches
         ✓ should return top and bottom paths if trimmable but only unique with descendent arrow
         ✓ should return top and bottom paths if trimmable and unique without descendent arrow
     Path Option
@@ -512,5 +513,5 @@
       ✓ should skip if it is in DOM but already is last-child of body
       ✓ should move the Element host if it is in DOM but is not last-child of body
 
-Chrome 91.0.4472 (Mac OS X 10.12.2): Executed 326 of 326 SUCCESS (5.787 secs / 5.438 secs)
+Chrome 92.0.4515 (Mac OS X 10.12.2): Executed 327 of 327 SUCCESS (3.911 secs / 3.617 secs)
 ```
