@@ -513,5 +513,5 @@
       ✓ should skip if it is in DOM but already is last-child of body
       ✓ should move the Element host if it is in DOM but is not last-child of body
 
-Chrome 92.0.4515 (Mac OS X 10.12.2): Executed 327 of 327 SUCCESS (3.911 secs / 3.617 secs)
+Chrome 103.0.5060 (Mac OS X 10.12.2): Executed 327 of 327 SUCCESS (4.511 secs / 4.211 secs)
 ```
