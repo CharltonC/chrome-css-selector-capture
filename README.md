@@ -131,6 +131,9 @@
   - Development for Safari and Firefox
     - I haven't investigated how similar the API will be however if there is not much variations in the implementation then it will definitely be possible down the track. The goal is to keep the same codebase or almost same codebase at least.
 - In the case of event is not getting picked up in some pages due to `evt.stopImmediatePropagation()`, such as the `mouseover` event please send me the page URL and steps to reproduce the issue. I already have a mechanism for dealing this scenario though for now I am not including as it involves the override of `Event.prototype.stopImmediatePropagation`.
+- Features that are not supported:
+  - iframe (suggestion: open the iframe URL in a new tab and run the extension to get its selector scoped to the iframe document)
+  - shadow dom (suggestion: use chrome devtool to get its shadow selector which is scoped to its shadow root)
 
 ## Privacy
 
@@ -140,6 +143,7 @@
 ## Issues/Support
 
 - As majority of time is spent prior to initial release, I am transitioned to casual maintenance for this project. Any future feature request will still be considered as whether it should go in the next release. For now the next version release interval would be somewhere in 3-6 months, unless for critical hotfix.
+- If you find this extension useful, simply give it a good rating in Chrome store and/or start this repository. It will make it easier for others to find it.
 - For bugs/issues, please provide details and try to be as specific as possible. For example:
   - URL
   - Steps to reproduce the issue
@@ -148,6 +152,8 @@
 
 ## Release Notes
 
+- 2.4.0 (2024.06.06)
+  - Optimization for highlights, resize and scroll
 - 2.3.2 (2023.08.24)
   - Upgraded to manifest v3
 - 2.3.1 (2021.09.01)
