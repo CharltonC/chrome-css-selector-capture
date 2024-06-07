@@ -133,7 +133,7 @@
 
   Path Stats Component/Controller
     ✓ should pass the data to component's controller and DOM
-    ✓ should reflect in component's controller and DOM when passed data changes 
+    ✓ should reflect in component's controller and DOM when passed data changes
 
   Chrome Handle Service (Independent Service from Angular)
     Get App State from Chrome Built-in Storage
@@ -179,15 +179,18 @@
       ✓ should be invalid if target tag name is "shl-app-shell"
       ✓ should be valid if target is none of the above
     get overlay data
-      ✓ should get overlay data for an element
-      ✓ should get overlay data for an element when its width/height is less than minimum allowed (4px)
-      ✓ should get overlay data for a collection of non-hidden elements (viewport data not provided)
-      ✓ should get overlay data for a collection of hidden elements (viewport data not provided)
-      ✓ should get overlay data for a collection of non-hidden/hidden elements (viewport data provided)
+      get overlay data for target element
+        ✓ should get overlay data for an element
+        ✓ should get overlay data for an element when its width/height is less than minimum 4px
+        ✓ should get overlay data for an element with 0 width/height
+        ✓ should call viewport handle with viewport data if provided
+      get overlay data for matched elements
+        ✓ should get overlay data for a collection of non-hidden elements
+        ✓ should get overlay data for a collection of hidden elements
+        ✓ should call viewport handle with viewport data if provided
     get updated overlay data for matched elem
-      ✓ should return updated state where isVisible is true if originally hidden but now visible
-      ✓ should return updated state where isVisible and inVp are false if originally visible but now hidden
-      ✓ should return unchanged state if originall visible & now still visible
+      ✓ should return overlay data for visible elment
+      ✓ should return overlay data for hidden elment
     set return how the element should be aligned depending on its current offset position and window viewport
       ✓ should align with top and left
       ✓ should align with top and right
@@ -204,10 +207,8 @@
       ✓ should return filtered elements if provided elements is part of matched elements
       ✓ should return false if provided elements is not part of matched elements
     should get viewport (window) data
-      ✓ should get viewport data from actual window if window param is not provided (when Visualviewport API is supported)
-      ✓ should get viewport data from mock window if window param is provided (when Visualviewport API is supported)
-      ✓ should get viewport data from actual window if window param is not provided (when Visualviewport API is not supported)
-      ✓ should get viewport data from mock window if window param is provided (when Visualviewport API is supported)
+      ✓ should return viewport data if `Visualviewport` is supported
+      ✓ should return viewport data if `Visualviewport` is not supported 
     copy text to clipboard
       ✓ should call `CopyHandle.prototype.copyText`
     get the matching global event target based on specified string
@@ -317,26 +318,26 @@
         ✓ should return false if not all path filters are off
 
   Viewport Handle Service
-    Format/Process Element's Offset data and Viewport data
-      ✓ should return formatted readable data
-    Check if element partially visible in Viewport
-      Format elem offset data and viewport data
-        ✓ should call the elem offset data and viewport data
-      Outside Viewport
-        ✓ should return false when elem is not visible across both X and Y axis 
-        ✓ should return false when elem is visible across X axis but not Y axis or vice versa
-      Inside Viewport
-        ✓ should return true when elem is completely visible across both X and Y axis
-        ✓ should return true when elem is partially visible across both X and Y axis
-    Check if element completely visible in Viewport
-      Format elem offset data and viewport data
-        ✓ should call the elem offset data and viewport data
-      Inside Viewport
-        ✓ should return true when elem is completely visible across both X and Y axis in Viewport
-      Outside Viewport
-        ✓ should return false when elem is not visible across both X and Y axis
-        ✓ should return false when elem is visible across one axis only
-        ✓ should return false when elem is partially visible across Y axis and/or X axis
+    Check if element is partially in viewport
+      ✓ should return true if element is within viewport x and y
+      ✓ should return false if element is inside viewport x and outside viewport y
+      ✓ should return false if element is outside viewport x and inside viewport y
+      ✓ should return false if element is outside viewport x and y
+    Check if element is fully in viewport
+      ✓ should return true if element is within viewport x and y
+      ✓ should return false if element is inside viewport x and outside viewport y
+      ✓ should return false if element is outside viewport x and inside viewport y
+      ✓ should return false if element is outside viewport x and y
+    Check if element is partially in x/y axis
+      ✓ should return true if left or right pos is inside viewport width
+      ✓ should return false if left or right pos is outside viewport width
+      ✓ should return true if top or bottom pos is inside viewport height
+      ✓ should return false if top or bottom pos is outside viewport height
+    Check if element is fully in x/y axis
+      ✓ should return true if both left and right are inside viewport width
+      ✓ should return false if both left and right are outside viewport width
+      ✓ should return true if both top and bottom are inside viewport height
+      ✓ should return false if both top and bottom are outside viewport height
 
   App Manager Service
     App
@@ -353,7 +354,6 @@
         ✓ should return false if viewport data has not been set
       set viewport Data
         ✓ should set the Viewport Data (default: size + scroll data)
-        ✓ should set the Viewport Data (scroll data only)
       set viewport state for Overlays' and other Offset elements
         ✓ should set the viewport state to true if it is partially in viewport
         ✓ should set the viewport state to false if it is partially in viewport
@@ -386,8 +386,7 @@
         ✓ should set the "isEntryTransOn" flag to true
         ✓ should set the "isEntryTransOn" flag to false
       get transform related css variables with values as string for passing to stylesheet
-        ✓ should return empty string when viewport is not defiend (app deactivated)
-        ✓ should return the both translate & scale variables when viewport is defined
+        ✓ should return the both translate & scale variables
         ✓ should return the both translate variables only if width/height is not defined when viewport is defined
       check if mouseover target can proceed
         ✓ should not be alolwed to be change if dialog is on
@@ -420,6 +419,7 @@
       copy the selector
         ✓ should copy the selector path if the path is not empty
         ✓ should escape the path string for any \ symbol so it can be used in JS as selector string
+        ✓ should trim one ore more whitespace
         ✓ should not copy the selector path if the path is empty
       toggle the opacity of the Path Bar
         ✓ should enable the opacity if Popup button is over Path Bar when it is aligned to the top
@@ -513,5 +513,5 @@
       ✓ should skip if it is in DOM but already is last-child of body
       ✓ should move the Element host if it is in DOM but is not last-child of body
 
-Chrome 103.0.5060 (Mac OS X 10.12.2): Executed 327 of 327 SUCCESS (4.511 secs / 4.211 secs)
+Chrome 103.0.5060 (Mac OS X 10.12.2): Executed 330 of 330 SUCCESS (3.471 secs / 3.222 secs)
 ```
